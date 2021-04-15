@@ -14,8 +14,8 @@ const App = () => {
       <div>
         <div>
           <Link to='/'>home</Link>
-          <Link to='/portfolio'>login</Link>
-          <Link to='/contact'>profile</Link>
+          <Link to='/portfolio'>portfolio</Link>
+          <Link to='/contact'>contact</Link>
         </div>
         <Switch>
           <Route exact path='/'>
