@@ -53,7 +53,7 @@ const Home = () => {
                       I am Justin Jarrard
           </Typography>
                     <Typography variant="body2" color="textSecondary" component="p">
-                      I am a fun loving guy who is falling in love with web development... But I still love golf, travel, and playing the drums. 
+                      I am a fun loving guy who is falling in love with web development. I still love golf, travel, and playing the drums too though ;). 
           </Typography>
                   </CardContent>
                 </CardActionArea>

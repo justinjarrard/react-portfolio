@@ -35,9 +35,6 @@ const Navbar = () => {
             <a href="/portfolio">
             <Button color="secondary">Portfolio</Button>
             </a>
-            <a href="/contact">
-            <Button color="secondary">Contact</Button>
-            </a>
           </Toolbar>
         </AppBar>
       </div>

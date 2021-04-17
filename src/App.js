@@ -6,7 +6,6 @@ import {
 } from 'react-router-dom'
 import Home from './pages/Home'
 import Portfolio from './pages/Portfolio'
-import Contact from './pages/Contact'
 import Navbar from './components/Navbar'
 import React from 'react';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -30,6 +29,7 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 'auto',
     backgroundColor:
       theme.palette.type === 'light' ? theme.palette.grey[200] : theme.palette.grey[800],
+    
   },
 }));
 
@@ -46,9 +46,6 @@ const App = () => {
           </Route>
           <Route path='/portfolio'>
             <Portfolio />
-          </Route>
-          <Route path='/contact'>
-            <Contact />
           </Route>
         </Switch>
       </div>

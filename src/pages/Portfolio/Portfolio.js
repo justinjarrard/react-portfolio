@@ -12,6 +12,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Link from '@material-ui/core/Link';
 import CardActionArea from '@material-ui/core/CardActionArea';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import GitHubIcon from '@material-ui/icons/GitHub';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -28,11 +30,12 @@ const useStyles = makeStyles((theme) => ({
   cardGrid: {
     paddingTop: theme.spacing(8),
     paddingBottom: theme.spacing(8),
+    flexDirection: 'row'
   },
   card: {
     height: '100%',
     display: 'flex',
-    flexDirection: 'column',
+    flexDirection: 'row',
   },
   cardMedia: {
     paddingTop: '56.25%', // 16:9
@@ -79,13 +82,31 @@ const Portfolio = () => {
               Portfolio
             </Typography>
             <Typography variant="h5" align="center" color="textSecondary" paragraph>
-              Here are some of my favorite applications build to date.  Please continue to check back to see for other fun and exciting projects in the works as we speak. 
+              Here are some of my favorite application builds to date.  Please continue to check back to see for other fun and exciting projects in the works as we speak. 
             </Typography>
+            <div className={classes.heroButtons}>
+              <Grid container spacing={2} justify="center">
+                <Grid item>
+                  <a href="https://www.linkedin.com/in/justin-jarrard-048040210/">
+                  <LinkedInIcon/>
+                  </a>
+                </Grid>
+                <Grid item>
+                  <a href="https://github.com/justinjarrard">
+                  <GitHubIcon/>
+                  </a>
+                </Grid>
+              </Grid>
+            </div>
           </Container>
         </div>
-        <Container className={classes.cardGrid} maxWidth="md">
+        {/* <Container className={classes.cardGrid} maxWidth="md" spacing={2}> */}
           {/* End hero unit */}
-          <Grid container spacing={4}>
+          <Grid 
+            container
+            direction="row"
+            justify="center"
+            alignItems="center">
             <Card className={classes.root}>
               <CardActionArea>
                 <CardMedia
@@ -112,7 +133,11 @@ const Portfolio = () => {
             </Card>
             
           </Grid>
-          <Grid container spacing={4}>
+          <Grid 
+            container
+            direction="row"
+            justify="center"
+            alignItems="center">
             <Card className={classes.root}>
               <CardActionArea>
                 <CardMedia
@@ -139,7 +164,11 @@ const Portfolio = () => {
             </Card>
 
           </Grid>
-          <Grid container spacing={4}>
+          <Grid 
+            container
+            direction="row"
+            justify="center"
+            alignItems="center">
             <Card className={classes.root}>
               <CardActionArea>
                 <CardMedia
@@ -166,7 +195,7 @@ const Portfolio = () => {
             </Card>
 
           </Grid>
-        </Container>
+        {/* </Container> */}
       </main>
       
     </>
